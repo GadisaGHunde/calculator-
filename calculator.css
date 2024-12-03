@@ -1,0 +1,75 @@
+/* General body styling */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+/* Calculator container styling */
+.calculator {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+/* Display screen styling */
+.display {
+  width: 100%;
+  height: 60px;
+  margin-bottom: 20px;
+  text-align: right;
+  font-size: 24px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: #f9f9f9;
+  box-sizing: border-box;
+}
+
+/* Button grid styling */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+/* Calculator button styling */
+.button {
+  padding: 15px;
+  font-size: 18px;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.button:hover {
+  background: #0056b3;
+}
+
+/* Special button styles (clear and equals) */
+.button.clear {
+  background: #dc3545;
+}
+
+.button.clear:hover {
+  background: #a71d2a;
+}
+
+.button.equals {
+  background: #28a745;
+  grid-column: span 2;
+}
+
+.button.equals:hover {
+  background: #1e7e34;
+}
